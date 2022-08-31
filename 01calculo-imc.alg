@@ -18,7 +18,7 @@ inicio
          escreva ("você está no peso ideal")
       fimse
       
-      se (IMC >= 25.9) e (IMC <= 29.9) entao
+      se (IMC >= 25.0) e (IMC <= 29.9) entao
          escreva ("você está em sobrepeso")
       fimse
       
@@ -26,7 +26,7 @@ inicio
          escreva ("você está em obesidade grau 1")
       fimse
       
-      se (IMC >= 35.39) e (IMC <= 39.9) entao
+      se (IMC >= 35.0) e (IMC <= 39.9) entao
          escreva ("você está em obesidade grau 2")
       fimse
       
