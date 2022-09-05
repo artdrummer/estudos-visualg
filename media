@@ -1,0 +1,26 @@
+algoritmo "Media"
+
+var
+      N1 , N2 , media: REAL
+inicio
+      escreval ("--------------------------------------")
+      escreval ("            ESCOLA OLIMPIO            ")
+      escreval ("DIGITE SUAS NOTAS PARA SABER SUA MÉDIA")
+      escreval ("--------------------------------------")
+      escreva ("Primeira nota:")
+      leia (N1)
+      escreva ("Segunda nota:")
+      leia (N2)
+      media <- (N1 + N2) / 2
+      se media >= 7 entao
+         escreval ("-------STATUS-------")
+         escreval ("Media:" ,media:4:2,)
+         escreval ("  Aluno aprovado")
+         escreval ("--------------------")
+      senao
+           escreval ("Media:" ,media :4:2,)
+           escreval ("-------STATUS-------")
+           escreval ("  Aluno reprovado")
+           escreval ("--------------------")
+      FIMSE
+fimalgoritmo
