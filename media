@@ -1,4 +1,4 @@
-algoritmo "Media"
+algoritmo "MEDIA ALUNO"
 
 var
       N1 , N2 , media: REAL
@@ -12,15 +12,23 @@ inicio
       escreva ("Segunda nota:")
       leia (N2)
       media <- (N1 + N2) / 2
-      se media >= 7 entao
+      se (media >= 7) entao
          escreval ("-------STATUS-------")
-         escreval ("Media:" ,media:4:2,)
-         escreval ("  Aluno aprovado")
+         escreval ("  Media:" ,media     )
+         escreval ("  Aluno aprovado"    )
          escreval ("--------------------")
       senao
-           escreval ("Media:" ,media :4:2,)
-           escreval ("-------STATUS-------")
-           escreval ("  Aluno reprovado")
-           escreval ("--------------------")
+           se ((media >= 5) e (media <= 6.99)) entao
+             escreval ("-------STATUS-------")
+             escreval ("     Media:" ,media  )
+             escreval ("     Aluno em       ")
+             escreval ("    recuperação     ")
+             escreval ("--------------------")
+           senao
+             escreval ("-------STATUS-------")
+             escreval ("  Media:" ,media     )
+             escreval ("  Aluno reprovado   ")
+             escreval ("--------------------")
+           fimse
       FIMSE
 fimalgoritmo
