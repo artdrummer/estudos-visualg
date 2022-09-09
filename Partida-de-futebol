@@ -1,0 +1,29 @@
+algoritmo "PARTIDA DE FUTEBOL"
+
+var
+   G1, G2, RESULTADO : inteiro
+inicio
+      escreval ("Bangu x Madureira")
+      escreval ("-----------------")
+      escreva ("Quantos gols do bangu?:")
+      leia (G1)
+      escreva("Quantos gols do madureira?:")
+      leia (G2)
+      se (G1 > G2) entao
+         RESULTADO <- (G1 - G2)
+         senao
+         RESULTADO <- (G2 - G1)
+      fimse
+      se (RESULTADO = 0) entao
+         escreval ("diferença:" ,RESULTADO)
+         escreval ("status: EMPATE")
+      senao
+           se(RESULTADO >= 5) entao
+              escreval ("diferença:" ,RESULTADO)
+              escreval ("status: GOLEADA")
+           senao
+                escreval ("diferença:" ,RESULTADO)
+                escreval ("status: PARTIDA NORMAL")
+           fimse
+      fimse
+fimalgoritmo
