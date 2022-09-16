@@ -1,0 +1,28 @@
+algoritmo " NOTA DO MELHOR ALUNO"
+
+var
+   A, C, NOTA, MAIOR, MAIORNOTA :REAL
+   NOME, MELHORNOME : caractere
+inicio
+      Escreval ("----------------")
+      Escreval ("-ESCOLA OLIMPIO-")
+      Escreva  ("Quantos alunos tem na turma?:")
+      Leia (A)
+      C <- 1
+      Enquanto (C <= A) faca
+               Escreval ("--------------")
+               Escreval ("Aluno ", C)
+               Escreva ("Nome do aluno:")
+               leia (NOME)
+               Escreva ("Nota do ", NOME ,":")
+               Leia (NOTA)
+               Se (NOTA > MAIORNOTA) Entao
+                  MAIORNOTA <- NOTA
+                  MELHORNOME <- NOME
+               Fimse
+               C <- C + 1
+      FImenquanto
+      Escreval ("----------------------------------------------------------------------")
+      Escreval ("O melhor aproveitamento foi de ", MELHORNOME, " Com a nota", MAIORNOTA )
+      Escreval ("----------------------------------------------------------------------")
+fimalgoritmo
