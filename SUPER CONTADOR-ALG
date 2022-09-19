@@ -28,3 +28,4 @@ inicio
  FIMSE
  ATE N = 3
 fimalgoritmo
+Escreval ("SAINDO...")
