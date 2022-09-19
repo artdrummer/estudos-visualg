@@ -1,0 +1,30 @@
+algoritmo "SUPER CONTADOR"
+
+var
+   N, CONT : INTEIRO
+inicio
+ REPITA
+ Escreval ("=================")
+ Escreval ("|      MENU     |")
+ Escreval ("=================")
+ Escreval ("| (1) DE 1 A 10 |")
+ Escreval ("| (2) DE 10 A 1 |")
+ Escreval ("| (3) SAIR      |")
+ LEIA (N)
+ SE N = 1 ENTAO
+    CONT <- 1
+    ENQUANTO (CONT <= 10) FACA
+             ESCREVA (CONT, "..")
+             CONT <- CONT + 1
+    FIMENQUANTO
+ SENAO
+      SE N = 2 ENTAO
+         CONT <- 10
+         ENQUANTO (CONT >= 1) FACA
+                  ESCREVA (CONT, "..")
+                 CONT <- CONT - 1
+         FIMENQUANTO
+      FIMSE
+ FIMSE
+ ATE N = 3
+fimalgoritmo
