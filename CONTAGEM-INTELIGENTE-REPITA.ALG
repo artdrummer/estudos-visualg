@@ -4,6 +4,7 @@ var
     N1, N2, contador: inteiro
     resp : caractere
 inicio
+    limpatela
     Escreval ("----------------------")
     Escreval ("CONTAGEM INTELIGENTE")
     Repita
