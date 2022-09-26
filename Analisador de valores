@@ -1,0 +1,30 @@
+algoritmo "Analisador de valores"
+
+var
+    C, D, A :INTEIRO
+    SOMA, MEDIA, ZERO  : real
+inicio
+      C <- 0
+      SOMA <- 0
+      MEDIA <- 0
+      D <- 0
+      ZERO <- 0
+      PARA C <- 1 ATE 5 FACA
+      ESCREVA ("DIGITE 0 ", C, "º VALOR :")
+      LEIA (A)
+      SOMA <- SOMA + A
+      MEDIA <- SOMA / C
+      SE (A%5 = 0) ENTAO
+         D <- D + 1
+      FIMSE
+      SE (A = 0) ENTAO
+         ZERO <- ZERO + 1
+      FIMSE
+      FIMPARA
+      escreval (" A SOMA DOS VALORES É :", SOMA)
+      escreval (" A MEDIA DOS VALORES É :", MEDIA:5:2)
+      escreval (" VALORES DIVISIVEIS POR 5 : ", D)
+      escreval (" VALORES NULOS :", ZERO)
+      
+      
+fimalgoritmo
