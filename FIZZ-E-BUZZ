@@ -1,0 +1,22 @@
+algoritmo "FIZZ E BUZZ"
+
+var
+   C : inteiro
+inicio
+      Para C <- 1 ate 30 faca
+      se (C%3=0) e (C%5=0) entao
+         escreval (" Fizz Buzz")
+      senao
+           Se (C%3=0) entao
+              escreval (" FIZZ")
+           senao
+                se (C%5=0) entao
+                  escreval (" Buzz")
+                senao
+                  escreval (C)
+              Fimse
+           Fimse
+      Fimse
+
+      fimpara
+fimalgoritmo
